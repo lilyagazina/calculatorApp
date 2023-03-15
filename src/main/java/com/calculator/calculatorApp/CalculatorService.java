@@ -1,10 +1,16 @@
 package com.calculator.calculatorApp;
 
-import org.springframework.web.bind.annotation.GetMapping;
-
 public interface CalculatorService {
     public String calculator();
-    public String greetings ();
-    public int addition(int num1, int num2);
-    }
+
+    public String greetings();
+
+    public String addition(String num1, String num2);
+
+    public String subtraction(String num1, String num2);
+
+    public String multiplication(String num1, String num2);
+
+    public String division(String num1, String num2);
+}
 
