@@ -1,16 +1,32 @@
 package com.calculator.calculatorApp;
 
-public interface CalculatorService {
-    public String calculator();
+import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.GetMapping;
 
-    public String greetings();
+@Service
+public class CalculatorService {
+    @GetMapping
+    public String calculator() {
+        return "<b>calculator</b>";
+    }
 
-    public String addition(String num1, String num2);
+    public String greetings() {
+        return "Добро пожаловать в калькулятор!";
+    }
 
-    public String subtraction(String num1, String num2);
+    public int addition(int n1, int n2) {
+        return n1 + n2;
+    }
 
-    public String multiplication(String num1, String num2);
+    public int subtraction(int n1, int n2) {
+        return n1 - n2;
+    }
 
-    public String division(String num1, String num2);
+    public int multiplication(int n1, int n2) {
+        return n1 * n2;
+    }
+
+    public int division(int n1, int n2) {
+        return n1 / n2;
+    }
 }
-
