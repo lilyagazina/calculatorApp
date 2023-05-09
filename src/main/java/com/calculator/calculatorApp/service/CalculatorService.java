@@ -29,9 +29,10 @@ public class CalculatorService {
     public int division(int n1, int n2) {
         return n1 / n2;
     }
+
     public String buildView(Integer n1,
-                             Integer n2,
-                             String operation) {
+                            Integer n2,
+                            String operation) {
         if (n1 == null || n2 == null) {
             throw new IllegalArgumentException();
         }
