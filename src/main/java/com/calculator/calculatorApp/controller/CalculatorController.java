@@ -1,5 +1,6 @@
-package com.calculator.calculatorApp;
+package com.calculator.calculatorApp.controller;
 
+import com.calculator.calculatorApp.service.CalculatorService;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
