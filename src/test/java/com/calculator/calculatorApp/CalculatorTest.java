@@ -31,7 +31,6 @@ public class CalculatorTest {
         assertEquals(10, result);
         int result1 = calc.addition(n3, n4);
         assertEquals(15, result1);
-
     }
 
     @Test
@@ -61,11 +60,10 @@ public class CalculatorTest {
 
     @Test
     public void divisionNotNull() {
-        int result = calc.division(n3, n4);
+        int result = calc.division(n3, n5);
         assertThrows(result, IllegalArgumentException.class);
     }
 
     private void assertThrows(int result, Class<IllegalArgumentException> illegalArgumentExceptionClass) {
     }
-
 }
