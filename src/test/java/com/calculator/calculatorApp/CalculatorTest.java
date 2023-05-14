@@ -60,7 +60,7 @@ public class CalculatorTest {
 
     @Test
     public void divisionNotNull() {
-        int result = calc.division(n3, n5);
+        int result = calc.division(n3, n4);
         assertThrows(result, IllegalArgumentException.class);
     }
 
